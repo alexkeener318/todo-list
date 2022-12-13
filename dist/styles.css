@@ -39,38 +39,97 @@ body, #content {
     gap: 16px;
     padding-left: 16px;
 }
-/* Come back to this, pointer area might be too big */
-.side-button:hover, #add:hover {
-    cursor: pointer;
-}
-
-#add {
-    grid-row: 2;
-    grid-column: 2 / -1;
-    border-radius: 64px;
-    width: 40px;
-    height: 40px;
-    margin: 16px;
-}
 
 .main {
     grid-column: 2 / -1;
-    grid-row: 3/ -1;
+    grid-row: 2/ -1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding-left: 128px;
+    flex-direction: column;
+    padding-left: 0px;
 }
 
 .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #F9F5EB;
-    border-radius: 16px;
-    width: 300px;
-    height: 250px;
-    margin: 16px;
+    border-radius: 32px;
+    width: max(500px,55%);
+    height: 64px;
+    margin: 8px;
+    padding-right: 32px;
+    box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.6);
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item:active {
+    filter: brightness(85%);
+}
+
+/* .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F9F5EB;
+    border-radius: 32px;
+    width: max(500px,55%);
+    height: 64px;
+    margin: 8px;
+    padding-right: 32px;
+} */
+
+.checkmark {
+    width: 20%;
+}
+
+.circle {
+    margin: 28px;
+    border-radius: 64px;
+    border: black 2px solid;
+    width: 30px;
+    height: 30px;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+.circle:active {
+    background-color: black;
 }
 
 .title {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+.date {
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 20px;
+    color: rgb(55, 55, 55);
+}
+
+.extendedItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F9F5EB;
+    border-radius: 32px;
+    width: max(500px,55%);
+    height: 200px;
+    margin: 8px;
+    padding-right: 32px;
+    box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.6);
+} 
+
+/* .title {
     border-bottom: 1px solid rgb(55, 55, 55);
     padding: 8px;
     margin: 0;
@@ -78,11 +137,4 @@ body, #content {
     text-align: center;
     color: rgb(55, 55, 55);
     font-weight: bold;
-}
-
-.info {
-    font-size: 20px;
-    margin: 0;
-    padding: 8px;
-    color: rgb(55, 55, 55);
-}
+} */
