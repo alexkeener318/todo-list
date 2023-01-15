@@ -1,0 +1,4 @@
+-- Fix CSS for individual items ******** DONE
+-- add ability to expand the todo item
+-- Add GUI to add todo item
+-- Convert HTML into javascript
